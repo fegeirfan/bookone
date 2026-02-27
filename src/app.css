@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1a5a96;
+  --color-secondary: #f7fafc;
+  --color-text: #2d3748;
+  --color-text-light: #718096;
+  --color-background: #edf2f7;
+  --font-family-serif: 'Lora', serif;
+  --font-family-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-serif);
+  font-weight: 700;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-semibold text-white;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
